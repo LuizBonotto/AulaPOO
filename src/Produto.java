@@ -1,8 +1,18 @@
 public class Produto {
     String nome;
     String descricao;
-    Double preco;
+    private Double preco;
     Integer quantidadeEmEstoque;
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        if (preco >= 0) {
+            this.preco = preco;
+        }
+    }
 
     Produto(String nome, String descricao, Double preco) {
 
