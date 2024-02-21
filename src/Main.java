@@ -79,5 +79,36 @@ public class Main {
         ContaBancaria conta1 = new ContaBancaria(1000,"1234");
         conta1.alteraSenha("5678");
 
+        /*
+        Exercício 1: Hierarquia de Veículos
+        Crie uma hierarquia de classes representando diferentes tipos de “Veiculos” esta classe servirá como base e terá
+        os métodos acelerar e frear. Depois crie subclasses como Carro, Moto e Bicicleta. Cada subclasse deverá
+        sobrescrever os métodos da superclasse.(Podem utilizar apenas mensagens na implementação dos método
+        específicos, como “Frear bicicleta ou acelerar carro”). Em seguida, crie uma classe principal que demonstre o
+        polimorfismo chamando os métodos de cada tipo de veículo usando a referência da superclasse.
+
+        Exercício 2: Sistema de Funcionários
+        Usando como base o conhecimento adquirido no exercício anterior. Crie uma hierarquia de classes para representar
+        diferentes tipos de funcionários, como FuncionarioBase, Gerente e Diretor. Cada classe deve ter métodos como
+        calcularSalario() e exibirDetalhes(). Em seguida, crie uma classe principal que demonstre o polimorfismo ao
+        calcular os salários e exibir os detalhes de diferentes tipos de funcionários. A implementação dos métodos da
+        subclasse fica a seu critério.
+
+        Exercício 3: Animal e Doméstico
+        Crie uma classe Animal com métodos como comer() e emitirSom(). Em seguida, crie uma classe Domestico que herda
+        de Animal e tenha métodos adicionais, como dormir() e brincar(). Finalmente, crie uma classe principal que
+        demonstre o polimorfismo ao chamar métodos de diferentes tipos de animais e animais domésticos.  A
+        implementação dos métodos da subclasse fica a seu critério.
+
+         */
+
+        Carro carro5 = new Carro(4);
+        carro5.acelerar();
+        carro5.quantasRodas();
+
+        Bicicleta bicicleta = new Bicicleta(2);
+        bicicleta.frear();
+        bicicleta.quantasRodas();
+
     }
 }
